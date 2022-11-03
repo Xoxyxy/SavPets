@@ -4,18 +4,18 @@
 ### Структура папок и файлов
 
 ```
-|--css                 #для основных стилей
-   |--main.css        #основной css файл
+|--css                  #для основных стилей
+   |--main.css          #основной css файл
 |--img                  #для изображений
-|--js                    #для основного скрипта
+|--js                   #для основного скрипта
    |--main.js           #основной js файл
-|--node_modules       #для хранения модулей
+|--node_modules         #для хранения модулей
 |--index.html           #главная html страница
 |--centrais.html        #страница centrais
 |--perdidos.html        #страница perdidos
-|--identificar.html      #страница identificar
-|--input.css             #дополнительные стили
-|--tailwind.config.js    #основные настройки tailwind
+|--identificar.html     #страница identificar
+|--input.css            #дополнительные стили
+|--tailwind.config.js   #основные настройки tailwind
 ```
 
 ### Функционал:
