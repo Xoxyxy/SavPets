@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <title>SavPets</title>
+</head>
+
+<body class="body">
+  <div class="overlay"></div>
+  <header class="header py-4 h-[72px] md:h-auto bg-accentColor">
+    <div class="container">
+      <nav class="flex justify-between items-center relative">
+        <a href="index.html" class="flex flex-col items-center">
+          <img class="absolute top-0 left-0" src="img/logo.svg" alt="Logo">
+          <div class="absolute top-[14px] left-[22px] text-[23px] leading-7 text-white">
+            <span class="font-medium">Sav</span><span class="logo-text text-blueColor font-bold">Pets</span>
+          </div>
+        </a>
+        <ul class="hidden md:flex ml-[10px] lg:-ml-[120px] gap-8">
+          <li><a href="index.html" class="header-link">Início</a>
+          </li>
+          <li><a href="#"
+              class="text-lightColor font-bold text-base leading-[21px] pb-6 px-1 border-b-2 border-lightColor">Centrais</a>
+          </li>
+          <li><a href="perdidos.html" class="header-link">Perdidos</a></li>
+        </ul>
+        <a href="identificar.html" class="white-btn hidden md:inline-block">Cadastre-se</a>
+      </nav>
+    </div>
+  </header>
+  <button class="burger block md:hidden">
+    <span class="burger-line top-line"></span>
+    <span class="burger-line mid-line"></span>
+    <span class="burger-line bottom-line"></span>
+  </button>
+  <ul
+    class="mobile-menu flex flex-col justify-center gap-11 bg-blueColor w-[80%] h-full absolute top-0 z-[10] right-[-999vw] text-right p-12 opacity-0">
+    <li><a href="index.html" class="header-mobile-link">Início</a>
+    </li>
+    <li><a href="centrais.html" class="header-mobile-link">Centrais</a></li>
+    <li class="mb-[50px]"><a href="perdidos.html" class="header-mobile-link">Perdidos</a></li>
+    <a href="identificar.html" class="white-btn text-center">Cadastre-se</a>
+  </ul>
+  <section class="container pt-[118px] pb-[70px] sm:pb-[110px]">
+    <div class="text-center">
+      <div class="subtitle mb-3">CENTRAIS</div>
+      <h2 class="second-title">Encontre uma organização para te ajudar</h2>
+    </div>
+    <div class="flex flex-wrap gap-4 justify-center bigLg:justify-start">
+      <div class="shadow-cardShadow rounded-[10px] p-8 pt-[35px] flex flex-col max-w-[250px]">
+        <div class="subtitle mb-[25px] text-center">Aspaan</div>
+        <div class="second-card-text">Endereço:
+          D A I A - BR153 - Distrito Agroindustrial de Anápolis, Anápolis - GO, 75104-240</div>
+        <div class="second-card-text">Funcionamento:
+          Seg. a sex. das 8:00 às 19:00</div>
+        <button class="second-card-btn">contate por whatsapp</button>
+        <button class="second-card-btn-empty modal-btn" data-btn="one">mais informações</button>
+      </div>
+      <div class="shadow-cardShadow rounded-[10px] p-8 pt-[35px] flex flex-col max-w-[250px]">
+        <div class="subtitle mb-[25px] text-center">Aspaan</div>
+        <div class="second-card-text">Endereço:
+          D A I A - BR153 - Distrito Agroindustrial de Anápolis, Anápolis - GO, 75104-240</div>
+        <div class="second-card-text">Funcionamento:
+          Seg. a sex. das 8:00 às 19:00</div>
+        <button class="second-card-btn">contate por whatsapp</button>
+        <button class="second-card-btn-empty modal-btn" data-btn="one">mais informações</button>
+      </div>
+      <div class="shadow-cardShadow rounded-[10px] p-8 pt-[35px] flex flex-col max-w-[250px]">
+        <div class="subtitle mb-[25px] text-center">Aspaan</div>
+        <div class="second-card-text">Endereço:
+          D A I A - BR153 - Distrito Agroindustrial de Anápolis, Anápolis - GO, 75104-240</div>
+        <div class="second-card-text">Funcionamento:
+          Seg. a sex. das 8:00 às 19:00</div>
+        <button class="second-card-btn">contate por whatsapp</button>
+        <button class="second-card-btn-empty modal-btn" data-btn="one">mais informações</button>
+      </div>
+      <div class="shadow-cardShadow rounded-[10px] p-8 pt-[35px] flex flex-col max-w-[250px]">
+        <div class="subtitle mb-[25px] text-center">Aspaan</div>
+        <div class="second-card-text">Endereço:
+          D A I A - BR153 - Distrito Agroindustrial de Anápolis, Anápolis - GO, 75104-240</div>
+        <div class="second-card-text">Funcionamento:
+          Seg. a sex. das 8:00 às 19:00</div>
+        <button class="second-card-btn">contate por whatsapp</button>
+        <button class="second-card-btn-empty modal-btn" data-btn="one">mais informações</button>
+      </div>
+      <div class="shadow-cardShadow rounded-[10px] p-8 pt-[35px] flex flex-col max-w-[250px]">
+        <div class="subtitle mb-[25px] text-center">Aspaan</div>
+        <div class="second-card-text">Endereço:
+          D A I A - BR153 - Distrito Agroindustrial de Anápolis, Anápolis - GO, 75104-240</div>
+        <div class="second-card-text">Funcionamento:
+          Seg. a sex. das 8:00 às 19:00</div>
+        <button class="second-card-btn">contate por whatsapp</button>
+        <button class="second-card-btn-empty modal-btn" data-btn="one">mais informações</button>
+      </div>
+    </div>
+  </section>
+  <div class="modal-overlay" data-modal="one">
+    <div class="modal">
+      <div class="text-right mb-3">
+        <button class="modal-close">
+          <img src="img/close.svg" alt="Close">
+        </button>
+      </div>
+      <div class="flex flex-col gap-[10px] sm:flex-row sm:justify-between items-center mb-[10px]">
+        <div class="subtitle">Aspaan</div>
+        <a href="#" class="second-card-btn-empty">contate por whatsapp</a>
+      </div>
+      <div>
+        <div class="modal-subtitle">Endereço</div>
+        <p class="second-card-text">D A I A - BR153 - Distrito Agroindustrial de Anápolis, Anápolis - GO.</p>
+      </div>
+      <div>
+        <div class="modal-subtitle">Funcionamento</div>
+        <p class="second-card-text">Seg. a sex. das 8:00 às 19:00</p>
+      </div>
+      <div>
+        <div class="modal-subtitle">Desaparecido desde</div>
+        <p class="second-card-text">12/06/2022</p>
+      </div>
+      <div>
+        <div class="modal-subtitle">Descrição</div>
+        <p class="second-card-text">Este cachorro é legal, antes de optar por uma raça, é importante que você faça uma
+          pesquisa profunda sobre cada uma delas. Também é importante que você converse com proprietários das raças para
+          saber como é o convívio com esse.</p>
+      </div>
+      <div>
+        <div class="modal-subtitle">Extra</div>
+        <div class="inline-flex flex-col">
+          <a href="tel:1122119933" class="second-card-text second-card-text--nomb">(11) 2211-9933</a>
+          <a href="www.aspaan.com.br" class="second-card-text second-card-text--nomb">www.aspaan.com.br</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-blueBgColor pt-[60px] sm:pt-[100px]">
+    <div class="border-b border-borderColor pb-[64px] sm:pb-[104px]">
+      <div class="flex gap-[80px] lg:gap-[100px] bigLg:gap-[162px] flex-wrap lg:flex-nowrap container">
+        <div>
+          <div class="footer-title">CONTEÚDO</div>
+          <ul class="flex flex-col gap-[27px]">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="centrais.html" class="footer-link">Centrais</a></li>
+            <li><a href="perdidos.html" class="footer-link">Perdidos</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">AJUDA</div>
+          <ul class="flex flex-col gap-[27px]">
+            <li><a href="#" class="footer-link">Contato</a></li>
+            <li><a href="#" class="footer-link">Suporte</a></li>
+            <li><a href="mailto:savpets@gmail.com" class="footer-link">savpets@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">PLATAFORMA</div>
+          <ul class="flex flex-col gap-[27px]">
+            <li><a href="#" class="footer-link">Sobre</a></li>
+            <li><a href="#" class="footer-link">Destaques</a></li>
+            <li><a href="#" class="footer-link">Termos e condições</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">REDES SOCIAIS</div>
+          <ul class="flex gap-[14px]">
+            <li><a class="inline-flex items-center gap-[10px]" href="#">
+                <div class="blueBg"><img src="img/inst.svg" alt="Instagram"></div>
+              </a></li>
+            <li><a class="inline-flex items-center gap-[10px]" href="tel:11912345678">
+                <div class="blueBg"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
+              </a></li>
+            <li><a class="inline-flex items-center gap-[10px]" href="mailto:savpets@gmail.com">
+                <div class="flex items-center blueBg"><img src="img/mail.svg" alt="Mail"></div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container py-[25px] sm:py-[45px] flex justify-between items-center flex-col sm:flex-row">
+      <a href="index.html">
+        <img src="img/logo-full.svg" alt="Logo">
+      </a>
+      <div class="text-greyColor text-base leading-[21px] font-normal">Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+
+</html>

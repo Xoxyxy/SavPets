@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <title>SavPets</title>
+</head>
+
+<body class="body">
+  <div class="overlay"></div>
+  <div class="bg-heroBg bg-cover bg-no-repeat bg-center w-full pb-[210px] sm:pb-[300px]">
+    <header class="header py-4 h-[72px] md:h-auto">
+      <div class="container">
+        <nav class="flex justify-between items-center relative">
+          <a href="index.html" class="flex flex-col items-center">
+            <img class="absolute top-0 left-0" src="img/logo.svg" alt="Logo">
+            <div class="absolute top-[14px] left-[22px] text-[23px] leading-7 text-white">
+              <span class="font-medium">Sav</span><span class="logo-text text-blueColor font-bold">Pets</span>
+            </div>
+          </a>
+          <ul class="hidden md:flex ml-[10px] lg:-ml-[120px] gap-8">
+            <li><a href="#"
+                class="text-lightColor font-bold text-base leading-[21px] pb-6 px-1 border-b-2 border-lightColor">Início</a>
+            </li>
+            <li><a href="centrais.html" class="header-link">Centrais</a></li>
+            <li><a href="perdidos.html" class="header-link">Perdidos</a></li>
+          </ul>
+          <a href="identificar.html" class="white-btn hidden md:inline-block">Cadastre-se</a>
+        </nav>
+      </div>
+    </header>
+    <button class="burger block md:hidden">
+      <span class="burger-line top-line"></span>
+      <span class="burger-line mid-line"></span>
+      <span class="burger-line bottom-line"></span>
+    </button>
+    <ul
+      class="mobile-menu flex flex-col justify-center gap-11 bg-blueColor w-[80%] h-full absolute top-0 z-[10] right-[-999vw] text-right p-12 opacity-0">
+      <li><a href="index.html" class="header-mobile-link">Início</a>
+      </li>
+      <li><a href="centrais.html" class="header-mobile-link">Centrais</a></li>
+      <li class="mb-[50px]"><a href="perdidos.html" class="header-mobile-link">Perdidos</a></li>
+      <a href="identificar.html" class="white-btn text-center">Cadastre-se</a>
+    </ul>
+    <section class="container pt-[200px] sm:pt-[225px]">
+      <div class="max-w-[555px] text-center mx-auto md:mx-0 md:text-left">
+        <div class="text-blueColor font-bold text-[20px] sm:text-[32px] leading-[24px] sm:leading-[39px] mb-4 sm:mb-7">
+          Sav Pets</div>
+        <h1 class="text-white font-bold text-[32px] sm:text-[52px] leading-[39px] sm:leading-[63px] mb-[18px]">Ajude os
+          animais
+          que precisam de você</h1>
+        <p class="text-white font-normal text-lg leading-[22px] mb-[18px]">A SavPets é mais que uma plataforma, ela é a
+          esperança de unir um animal a quem irá oferecer todo o cuidado e carinho que ele merece.</p>
+        <div class="flex-col flex gap-[20px] md:flex-row">
+          <a href="#" class="btn text-white bg-blueColor">Saiba
+            Mais</a>
+          <a href="#"
+            class="text-blueColor font-bold text-sm leading-[18px] uppercase py-3 px-7 border-[1px] rounded-[40px] border-blueColor">Adote
+            um animal</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="relative pb-[120px] sm:pb-[209px] mb-[0] lg:mb-[113px]">
+    <img class="paw absolute -top-[50px] left-[200px] -z-[1]" src="img/paw-1.jpg" alt="Paw">
+    <img class="paw absolute top-[370px] left-0 -z-[1]" src="img/paw-2.jpg" alt="Paw">
+    <div class="container pt-[60px] sm:pt-[140px]">
+      <h2
+        class="text-[23px] sm:text-[26px] leading-[28px] sm:leading-[32px] font-bold text-troutColor mb-[50px] text-center lg:text-left">
+        Escolha uma maneira de ajudar os
+        animais que você gosta</h2>
+      <div class="flex justify-center lg:justify-between flex-wrap lg:flex-nowrap gap-[32px]">
+        <div class="bg-dog1 card">
+          <a href="#" class="card-btn hover:bg-blueColor transition-all">Adoção</a>
+          <div class="card-title">Uma nova companhia para um pet</div>
+          <p class="card-text">Todo dia milhares de animais são encontrados na rua sem dono, ajude a mudar isto.</p>
+        </div>
+        <div class="bg-cat1 card">
+          <a href="#" class="card-btn hover:bg-blueColor transition-all">voluntariado</a>
+          <div class="card-title">Junte-se a nossa equipe apoiando esta causa</div>
+          <p class="card-text">Cadastre sua organização para oferecer apoio a quem estiver precisando. </p>
+        </div>
+        <div class="bg-dog2 card">
+          <a href="#" class="card-btn hover:bg-blueColor transition-all">colaboração</a>
+          <div class="card-title">Apoio durante a procura de animais perdidos</div>
+          <p class="card-text">Abrindo novos chamados, você notificará a todos sobre o desaparecimento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container flex items-center justify-center flex-wrap lg:flex-nowrap pb-[130px] mb-0 sm:mb-[190px]">
+    <img class="hidden lg:block" src="img/help-img.jpg" alt="Woman with dog">
+    <div class="text-troutColor text-center lg:text-left max-w-[auto] lg:max-w-[452px]">
+      <h3 class="title">Junte-se a uma plataforma dedicada a auxiliar os animais </h3>
+      <p class="text">A SavPets é uma comunidade pronta a ajudar os animais que precisam de algum
+        cuidado ou atenção. Nela você poderá encontrar diversas opções de animais que podem estar disponíveis para
+        adoção, além de ajudar na procura dos que estão perdidos, para que juntos possamos garantir que o pet esteja em
+        ótimas mãos.</p>
+    </div>
+  </section>
+  <section
+    class="container flex justify-center items-center sm:items-start gap-[50px] lg:gap-[125px] flex-col sm:flex-row pb-[80px] sm:pb-[190px]">
+    <div class="sm:max-w-[452px] text-center sm:text-left text-troutColor">
+      <h4 class="title">O que nos torna diferentes dos outros</h4>
+      <p class="text mb-[25px]">Aqui o importante é a proteção e fecilidade dos animais. Na SavPets é possível realizar
+        de forma rápida e fácil a criação de novos alertas de animais perdidos, além de ser possível encontrar
+        organizações que podem ajudar as pessoas no que precisarem.</p>
+      <a href="#" class="btn text-white bg-accentColor hover:bg-blueColor transition-all">Saiba
+        Mais</a>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-[25px] sm:min-w-[160px] text-troutColor">
+      <div class="benefits-card">
+        <img class="mb-[10px]" src="img/star.svg" alt="Star">
+        <div class="benefits-title">Suporte Ativo</div>
+        <p class="text">Contate-nos pelo email savpets@gmail.com.</p>
+      </div>
+      <div class="benefits-card">
+        <img class="mb-[10px]" src="img/star.svg" alt="Star">
+        <div class="benefits-title">Suporte Ativo</div>
+        <p class="text">Contate-nos pelo email savpets@gmail.com.</p>
+      </div>
+      <div class="benefits-card">
+        <img class="mb-[10px]" src="img/star.svg" alt="Star">
+        <div class="benefits-title">Suporte Ativo</div>
+        <p class="text">Contate-nos pelo email savpets@gmail.com.</p>
+      </div>
+      <div class="benefits-card">
+        <img class="mb-[10px]" src="img/star.svg" alt="Star">
+        <div class="benefits-title">Suporte Ativo</div>
+        <p class="text">Contate-nos pelo email savpets@gmail.com.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-accentColor py-[60px] sm:py-[100px]">
+    <div
+      class="container flex items-center justify-center lg:justify-start gap-[40px] lg:gap-[210px] md:gap-[100px] flex-col md:flex-row">
+      <div class="max-w-[582px] text-center md:text-left">
+        <h4 class="title text-white">Pronto para começar na SavPets?</h4>
+        <p class="text text-white">Ajudando os animais que precisam de cuidados a ficarem protegidos, bem cuidados e
+          felizes, oferecendo todo o suporte necessário para que isso possa se tornar cada vez mais realidade.</p>
+      </div>
+      <div>
+        <a href="#" class="btn bg-white text-accentColor hover:text-white hover:bg-blueColor transition-all">começar</a>
+      </div>
+    </div>
+  </section>
+  <section class="py-[60px] sm:py-[150px]">
+    <div
+      class="container text-troutColor flex justify-start gap-12 lg:gap-[130px] flex-col md:flex-row items-center md:items-start">
+      <div class="flex flex-col items-center md:items-start">
+        <h5 class="title text-center md:text-start">Como podemos ajudá-lo?</h5>
+        <div class="text mb-[25px] text-center md:text-start">Sinta-se a vontade para nos contatar quando quiser.</div>
+        <div>
+          <ul class="flex flex-col gap-[14px]">
+            <li><a class="inline-flex items-center gap-[10px]" href="#">
+                <div class="blueBg"><img src="img/inst.svg" alt="Instagram"></div>
+                <div>@savpets</div>
+              </a></li>
+            <li><a class="inline-flex items-center gap-[10px]" href="tel:11912345678">
+                <div class="blueBg"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
+                <div>(11) 9 1234-5678</div>
+              </a></li>
+            <li><a class="inline-flex items-center gap-[10px]" href="mailto:savpets@gmail.com">
+                <div class="flex items-center blueBg"><img src="img/mail.svg" alt="Mail"></div>
+                <div>savpets@gmail.com</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-right mb-3">Preenchimento obrigatório <span class="text-redColor">*</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <form id="form" class="flex flex-col shadow-formShadow rounded-[10px] p-1 mb-[35px]">
+            <input class="input" type="text" placeholder="Name*" required name="name" inputmode="text">
+            <hr>
+            <input class="input" type="email" placeholder="Email*" required name="email" inputmode="email">
+            <hr>
+            <input class="input" type="text" placeholder="Assunto*" required name="tel" inputmode="tel">
+            <hr>
+            <textarea class="text-troutLightColor text-sm leading-[18px] font-bold w-[300px] sm:w-[360px] h-[97px] p-5"
+              placeholder="Mensagem*" required name="message" inputmode="text"></textarea>
+          </form>
+          <button type="submit" form="form" href="#"
+            class="font-bold text-base leading-[21px] uppercase py-3 px-10 rounded-[40px] text-white bg-accentColor hover:bg-blueColor transition-all">enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-blueBgColor pt-[60px] sm:pt-[100px]">
+    <div class="border-b border-borderColor pb-[64px] sm:pb-[104px]">
+      <div class="flex gap-[80px] lg:gap-[100px] bigLg:gap-[162px] flex-wrap lg:flex-nowrap container">
+        <div>
+          <div class="footer-title">CONTEÚDO</div>
+          <ul class="flex flex-col gap-[27px]">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="centrais.html" class="footer-link">Centrais</a></li>
+            <li><a href="perdidos.html" class="footer-link">Perdidos</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">AJUDA</div>
+          <ul class="flex flex-col gap-[27px]">
+            <li><a href="#" class="footer-link">Contato</a></li>
+            <li><a href="#" class="footer-link">Suporte</a></li>
+            <li><a href="mailto:savpets@gmail.com" class="footer-link">savpets@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">PLATAFORMA</div>
+          <ul class="flex flex-col gap-[27px]">
+            <li><a href="#" class="footer-link">Sobre</a></li>
+            <li><a href="#" class="footer-link">Destaques</a></li>
+            <li><a href="#" class="footer-link">Termos e condições</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">REDES SOCIAIS</div>
+          <ul class="flex gap-[14px]">
+            <li><a class="inline-flex items-center gap-[10px]" href="#">
+                <div class="blueBg"><img src="img/inst.svg" alt="Instagram"></div>
+              </a></li>
+            <li><a class="inline-flex items-center gap-[10px]" href="tel:11912345678">
+                <div class="blueBg"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
+              </a></li>
+            <li><a class="inline-flex items-center gap-[10px]" href="mailto:savpets@gmail.com">
+                <div class="flex items-center blueBg"><img src="img/mail.svg" alt="Mail"></div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container py-[25px] sm:py-[45px] flex justify-between items-center flex-col sm:flex-row">
+      <a href="index.html">
+        <img src="img/logo-full.svg" alt="Logo">
+      </a>
+      <div class="text-greyColor text-base leading-[21px] font-normal">Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+
+</html>

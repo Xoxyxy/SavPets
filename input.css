@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: none;
+    border: none;
+  }
+
+textarea {
+  resize: none;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+.body--fixed {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s;
+}
+
+.overlay--active {
+  opacity: .7;
+  visibility: visible;
+}
+
+.container {
+  max-width: 1088px;
+}
+
+.btn {
+  @apply font-bold text-base leading-[21px] uppercase py-3 px-7 rounded-[40px]
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header--fixed {
+  position: fixed;
+  background-color: #323F8D;
+}
+
+.fade {
+  animation: fade .2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-overlay {
+  @apply w-full h-full fixed top-0 bg-modalBgColor z-20 opacity-0 invisible transition-all
+}
+
+.modal--open {
+  @apply opacity-[1] visible
+}
+
+.modal {
+  @apply bg-white rounded-[10px] w-[300px] sm:w-[380px] md:w-[500px] fixed top-[25%] left-[50%] -translate-x-[50%] z-[20] p-8
+}
+
+.modal-subtitle {
+  @apply text-troutColor text-sm leading-[18px] font-medium
+}
+
+.second-title {
+  @apply text-troutColor text-xl sm:text-2xl font-bold mb-[30px] sm:mb-[60px]
+}
+
+.subtitle {
+  @apply text-blueColor text-base sm:text-lg leading-[19px]  sm:leading-[23px] font-bold
+}
+
+.logo-text--active {
+  @apply text-white
+}
+
+.header-link {
+  @apply text-greyColor font-normal text-base leading-[21px] pb-6 px-1 hover:text-white transition-all
+}
+
+.header-mobile-link {
+  @apply text-white font-bold text-2xl leading-[29px]
+}
+
+.white-btn {
+  @apply text-white font-bold text-sm leading-[18px] px-6 py-[10px] border-[1px] rounded-[40px] border-white
+}
+
+.card {
+  @apply bg-no-repeat bg-white bg-right w-[350px] h-[250px] shadow-cardShadow rounded-[10px] py-9 pl-6
+}
+
+.card-btn {
+  @apply inline-block bg-accentColor text-white text-xs font-bold uppercase rounded-[10px] py-[2px] px-2 mb-5
+}
+
+.card-title {
+  @apply text-troutColor font-bold text-[15px] leading-5 max-w-[125px] mb-3
+}
+
+.card-text {
+  @apply text-xs font-normal text-troutColor max-w-[175px]
+}
+
+.second-card-text {
+  @apply text-troutColor text-xs font-normal mb-[10px]
+}
+
+.second-card-text--nomb {
+  @apply mb-0 inline-block
+}
+
+.second-card-btn {
+  @apply font-bold text-xs leading-4 uppercase rounded-[40px] py-2 px-[18px] text-white bg-blueColor mb-[5px]
+}
+
+.second-card-btn-empty {
+  @apply text-blueColor font-bold text-xs leading-4 uppercase py-2 px-8 border-[1px] rounded-[40px] border-blueColor
+}
+
+.burger {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  height: 20px;
+  width: 30px;
+  z-index: 11;
+}
+
+.burger--fixed {
+  position: fixed;
+}
+
+.burger-line {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFAF1;
+  transition: all .1s ease-in-out;
+  border-radius: 3px;
+}
+
+.top-line {
+  top: 0;
+}
+
+.mid-line {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.bottom-line {
+  top: auto;
+  bottom: 0;
+}
+
+.burger.active>.top-line {
+  top: calc(50% - 1px);
+  transform: rotate(-45deg);
+  transition: all .1s ease-in-out;
+}
+
+.burger.active>.mid-line {
+  transform: scale(0);
+  transition: all .1s ease-in-out;
+}
+
+.burger.active>.bottom-line {
+  bottom: calc(50% - 1px);
+  transform: rotate(45deg);
+  transition: all .1s ease-in-out;
+}
+
+.mobile-menu.active {
+  position: fixed;
+  opacity: 1;
+  right: 0;
+  transition: all .2s;
+}
+
+.title {
+  @apply text-[24px] sm:text-[35px] leading-[28px] sm:leading-[42px] font-bold mb-[25px]
+}
+
+.text {
+  @apply text-base font-normal
+}
+
+
+.benefits-title {
+  @apply text-troutColor text-lg font-bold mb-[10px]
+}
+
+.benefits-card {
+  @apply flex flex-col items-center text-center sm:block sm:text-left
+}
+
+.input {
+  @apply text-troutLightColor text-sm leading-[18px] font-bold w-[300px] sm:w-[360px] h-[59px] p-5
+}
+
+.blueBg {
+  @apply bg-accentColor p-[10px] rounded-full w-[40px] h-[40px]
+}
+
+.footer-title {
+  @apply text-white text-lg leading-[23px] font-bold mb-[35px] lg:mb-[71px]
+}
+
+.footer-link {
+  @apply text-greyColor text-base leading-[21px] font-normal hover:text-white transition-all p-1
+}
