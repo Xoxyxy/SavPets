@@ -47,7 +47,7 @@ const modalOverlay = document.querySelector('.modal-overlay'),
 if (modal && modalOverlay) {
   modalBtns.forEach(btn => {
     btn.addEventListener('click', event => {
-      let dataBtn = event.currentTarget.getAttribute('data-btn')
+      let dataBtn = event.target.getAttribute('data-btn')
       const dataModal = document.querySelector(`[data-modal="${dataBtn}"]`)
       dataModal.classList.add('modal--open')
       body.classList.add('body--fixed')
