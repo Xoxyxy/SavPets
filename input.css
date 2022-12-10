@@ -211,6 +211,7 @@ textarea {
   position: fixed;
   opacity: 1;
   right: 0;
+  visibility: visible;
   transition: all .2s;
 }
 

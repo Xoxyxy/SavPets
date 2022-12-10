@@ -599,6 +599,10 @@ body {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -621,10 +625,6 @@ body {
 
 .left-\[22px\] {
   left: 22px;
-}
-
-.right-\[-999vw\] {
-  right: -999vw;
 }
 
 .-top-\[50px\] {
@@ -858,6 +858,10 @@ body {
 
 .gap-12 {
   gap: 3rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-\[10px\] {
@@ -1190,7 +1194,7 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-cardTwoShawod {
+.shadow-cardTwoShadow {
   --tw-shadow: 0px 7px 12px rgba(0, 0, 0, 0.5);
   --tw-shadow-colored: 0px 7px 12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1227,10 +1231,6 @@ textarea {
 .body--fixed {
   overflow: hidden;
 }
-
-/* .body--modal-fixed {
-  overflow: hidden;
-} */
 
 .overlay {
   position: fixed;
@@ -1602,6 +1602,7 @@ textarea {
   position: fixed;
   opacity: 1;
   right: 0;
+  visibility: visible;
   transition: all .2s;
 }
 
@@ -1663,17 +1664,6 @@ textarea {
   .input {
     width: 360px;
   }
-}
-
-.card-box {
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-.card-hover {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .blueBg {
