@@ -223,7 +223,6 @@ textarea {
   @apply text-base font-normal
 }
 
-
 .benefits-title {
   @apply text-troutColor text-lg font-bold mb-[10px]
 }
